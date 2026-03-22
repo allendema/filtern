@@ -1,0 +1,29 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# de
+# https://codeberg.org/allendema/filtern/raw/branch/main/de.txt
+# https://github.com/allendema/filtern/raw/main/de.txt
+
+! de !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2023-02-09 https://www.duden.de
+www.duden.de###aab-container
+
+! 2021-11-14 https://studyflix.de
+studyflix.de##.up-modal-viewport
+studyflix.de##.-enabled.up-can-clean.huge-notification
+! 2021-11-22 https://studyflix.de
+studyflix.de##.up-modal-backdrop
+
+! 23.06.2024 https://www.glassdoor.de
+www.glassdoor.de###HardsellOverlay
+
+! 15.09.2024 https://www.northdata.de
+www.northdata.de##.purple-overlay.csvexport-message.message.icon.ui
+! 19.09.2024 https://www.northdata.de
+www.northdata.de##[href^="https://blog.northdata.de/north-data-steueroasen"]
+
+! 05.03.2026 https://www.blick-aktuell.de
+||www.blick-aktuell.de/AdServer/$image
+
+! de !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

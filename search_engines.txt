@@ -1,0 +1,93 @@
+! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Version: 22.03.2026
+! Expires: 5 days
+
+# search_engines - block trackers, remove cookies, block elements.
+# https://codeberg.org/allendema/filtern/raw/branch/main/search_engines.txt
+# https://github.com/allendema/filtern/raw/main/search_engines.txt
+
+
+! SEARCH ENGINES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 3/22/2020
+||3p^$domain=searx.*|searxng.*
+||*.*.bing.net^
+||dual-a-0001.a-msedge.net^
+||live.staticflickr.com^
+!
+!
+!
+! defunct !!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2021-04-25 https://petalsearch.com
+||metrics*.data.hicloud.com:6447^
+
+! 1/17/2020 onesearch.com
+||www.onesearch.com/notracking/beacon/*$important
+
+! 2022-06-04 https://you.com
+||you.com/api/recordEvent$important
+! 2021-12-12 https://you.com
+||you.com/api/instrumentation$important
+
+! 2023-03-06 https://petalsearch.com
+petalsearch.com##.content
+petalsearch.com###extension-popup > .el-popper.el-popover
+! defunct !!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+! 2021-04-05 https://www.dogpile.com
+||pixel.tatpek.com^$script,domain=dogpile.com
+
+! 2/20/2020 swisscows.ch
+||www.smartredirect.de^$popup
+||adyen.com^
+
+! 2021-07-04 https://tineye.com
+||cdn.carbonads.com^
+
+! 2022-02-06 https://yandex.com
+yandex.com##div.incut_inserted_yes.incut_js_inited.i-bem.incut_position_page-fixed.incut_type_direct.incut:nth-of-type(161)
+yandex.com##div.incut_inserted_yes.incut_js_inited.i-bem.incut_position_page-fixed.incut_type_direct.incut:nth-of-type(242)
+
+! 2021-06-22 https://search.brave.com
+||search.brave.com/api/feedback?t=telemetry$important
+! 2021-07-04 https://tiger.ch
+tiger.ch###gridSuche_panRecord_0
+
+! 2021-01-18 https://duckduckgo.com
+||duckduckgo.com^
+! 2021-03-01 https://swisscows.com
+||swisscows.com/api/web/ads
+
+! 2021-07-04 https://yandex.com
+yandex.com##.CbirPanel-OboardingDrag.MessageBox_size_m.MessageBox_view_inverse.MessageBox_hasClose.MessageBox_layout_tooltip.MessageBox_opaque.MessageBox
+
+! 2021-09-24 https://www.etools.ch
+www.etools.ch##div.sRecord:nth-of-type(1)
+www.etools.ch##.sResultStatus
+www.etools.ch##div.sRecord:nth-of-type(2)
+
+! 2021-07-27 https://search.brave.com
+||search.brave.com/api/feedback$important
+! 2022-04-21 https://search.brave.com
+||cdn.search.brave.com/*/v*/static/serp-js/feedback/*$important
+||*.brave.com/*/v*/static/serp-js/telemetry/*$important
+search.brave.com##div#usage-metrics
+! 2022-05-22 https://search.brave.com
+search.brave.com##.svelte-5ygtku.panel
+
+! 2025-03-10 https://good-search.org
+# trash - analytics + client side bing + brave requests
+good-search.org,gexsi.com##+js(set-session-storage-item, searches, 1})
+search.brave.com##+js(trusted-set-cookie, summarizer, 0)
+search.brave.com##+js(set-local-storage-item, summarizer, 0)
+
+search.brave.com##+js(set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
+search.brave.com##+js(set-session-storage-item, app.usageMetricsOptOut, "true")
+search.brave.com##+js(set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
+search.brave.com##+js(cookie-remover)
+search.brave.com#%#//scriptlet('remove-cookie')
+
+! SEARCH ENGINES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

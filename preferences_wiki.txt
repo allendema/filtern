@@ -1,0 +1,26 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Preferences - Theme and remove some cookies
+# https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
+# https://github.com/allendema/filtern/raw/main/preferences_wiki.txt
+
+
+! Wiki !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! set theme to night mode
+! different subdomains use different cookie names.
+de.wikipedia.org##+js(trusted-set-cookie, dewikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+en.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+de.m.wikipedia.org##+js(trusted-set-cookie, dewikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+en.m.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+
+! 2021-07-31 https://www.wikihow.com
+www.wikihow.com###article_courses_banner
+en.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+
+! remove some long ttl cookies
+wikipedia.*##+js(cookie-remover, "WMF-Last-Access")
+wikipedia.*##+js(cookie-remover, "WMF-Last-Access-Global")
+wikipedia.*##+js(cookie-remover, WMF-Last-Access)
+wikipedia.*##+js(cookie-remover, WMF-Last-Access-Global)
+! Wiki !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

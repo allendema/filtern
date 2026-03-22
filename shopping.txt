@@ -1,0 +1,20 @@
+! Shopping !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 27.05.2024 https://www.rewe.de
+||shop.rewe-static.de/rewe-duc-base/ads/
+||eum.instana.rewe-group.com^
+||rewe.de/api/xrd/events
+||rewe.de/api/xrd/page-data/data-layer
+||rewe.de/shop/api/productlist/impressions
+||rewe.de/shop/api/productlist/interactions
+
+! 11.06.2024 https://shop.alnatura.de
+shop.alnatura.de##.modal-content
+
+! 22.09.2025 https://produkte.globus.de
+||produkte.globus.de/*/cogi-etracker/
+
+! 29.09.2025 https://www.idealo.de
+||www.idealo.*/mvc/pagetracking/$1p,important
+
+! Shopping !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

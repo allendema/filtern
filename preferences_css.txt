@@ -1,0 +1,20 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# CSS rules based on preferences
+# https://codeberg.org/allendema/filtern/raw/branch/main/preferences_css.txt
+# https://github.com/allendema/filtern/raw/main/preferences_css.txt
+
+! CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://notes.unindented.org/notes/note_dark_mode_for_hacker_news/
+!news.ycombinator.com##html:style(filter: invert(90%) hue-rotate(180deg); background: white)
+
+! https://jahed.dev/2023/06/02/simple-dark-mode-with-ublock-origin/
+news.ycombinator.com##html:style(filter: invert(95%) !important;)
+news.ycombinator.com##td[bgcolor="#ff6600"]:style(filter: invert(105%) !important;)
+! 2026-02
+! has-text in ublock origin supports regex, so use regex for multiple word matching
+! https://redlib.catsarch.com/r/uBlockOrigin/comments/13tvexc/achieving_best_performance_with_hastext/
+! 03.11.2025 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##html:style(filter: invert(90%) !important;)
+! CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,26 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Forums - Remove banners.
+# https://codeberg.org/allendema/filtern/raw/branch/main/de.txt
+# https://github.com/allendema/filtern/raw/main/de.txt
+
+! Forums !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 2023-03-04 https://www.digital-eliteboard.com
+www.digital-eliteboard.com##.js-notices.notices--isMulti.notices--bottom_fixer.notices > .notice--dark.js-notice.notice > .notice-content
+www.digital-eliteboard.com##.notice--hasImage.notice--dark.js-notice.notice
+
+! 11.09.2025 https://www.ip-phone-forum.de
+||www.ip-phone-forum.de/styles/ads/startup-*-de.gif$image
+www.ip-phone-forum.de##.ippf_sidebar_3cx
+! 21.03.2026 https://www.ip-phone-forum.de
+||www.ip-phone-forum.de/styles/ads/*$image
+
+! 21.02.2026 https://lowendtalk.com
+lowendtalk.com##.PanelColumn.Column
+
+! 2021-11-13 http://sultanovic.net
+sultanovic.net###cc55
+
+! Forums !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

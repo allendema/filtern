@@ -1,0 +1,58 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Remove banners, odds, etc. from sport sites
+# https://codeberg.org/allendema/filtern/raw/branch/main/sports.txt
+# https://github.com/allendema/filtern/raw/main/sports.txt
+
+
+! Sports !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2024-04-16 https://www.flashscore.com
+www.flashscore.*##.liveBet--animated.liveBet
+! 2024-04-22 https://www.flashscore.com
+www.flashscore.*##div.section:nth-of-type(10)
+! 17.06.2024 https://www.flashscore.com
+www.flashscore.*##.prematchOddsBonus__bonus--withDescription.prematchOddsBonus__bonus--withButton.prematchOddsBonus__bonus
+www.flashscore.*##.showMore--wp.showMore.ui-show-more
+www.flashscore.*##.oddsTab__poweredBy
+www.flashscore.*##.bookmaker
+! 18.08.2024 https://www.flashscore.com
+www.flashscore.*###tc > .sideMenu > .leftMenu__item > .leftMenu__href
+! 18.08.2024 https://www.flashscore.com
+www.flashscore.*###mc > .isMobileSticky.isSticky
+www.flashscore.*###lsadvert-zid-68 > div
+www.flashscore.*##h1
+! 30.08.2024 https://www.flashscore.com
+www.flashscore.*###g_1_EaryFQkA > .liveBetWrapper
+! 2021-04-11 https://www.livescore.com
+||www.livescore.com/ls-web-assets/images/ls_header@2x-*.webp$image
+! 2022-10-17 https://www.livescore.com
+www.livescore.com##.ze
+! 2022-11-02 https://www.livescore.com
+www.livescore.com##.qe
+! 2022-11-06 https://www.livescore.com
+www.livescore.com##.je
+! 2022-12-23 https://www.livescores.com
+www.livescores.com##.Wb
+www.livescores.com##.xe
+www.livescores.com##.Fd
+www.livescores.com###socialBar__actionButtons__wrapper
+! 2021-08-15 https://www.livescore.com
+www.livescores.com##.BannerTop_imageWrapper__3lXgs
+! 2021-08-10 https://www.livescore.com
+www.livescore.com###socialBar__actionButtons__wrapper
+
+wwww.flashscore.*##div[class*="oddsWrapper"]
+! 15.01.2025 https://www.flashscore.de
+! TODO make it more generic for other tlds.
+www.flashscore.*##.gambling--DE.gambling--aboveLivetable.gambling
+! 22.03.2025 https://www.flashscore.de
+www.flashscore.*##.gambling--DE.gambling--aboveLivetable.gambling
+! 15.08.2025 https://www.flashscore.de
+www.flashscore.*##.wcl-onboarding_mt--p.wcl-tooltip_tb39h
+www.flashscore.*##.section--nmb.section
+! 10.11.2025 https://www.flashscore.de
+www.flashscore.*##tc > .sideMenu > .leftMenu__head
+! 12.02.2026 https://www.flashscore.de
+www.flashscore.*#.outrightWidget
+! Sports !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

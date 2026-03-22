@@ -1,0 +1,53 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Misc - Ads, Banners
+# https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
+# https://github.com/allendema/filtern/raw/main/misc.txt
+
+! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 12/31/2019 maps.me
+||a.mapillary.com^
+
+||aj2073.online^
+
+! 1/26/2020 agar.io
+||*.zendesk.com^
+
+||vector.im^
+
+! 4/12/2020 sitelock.com
+||www.sitelock.com^$important
+! 4/13/2020 ebay.de
+||www.ebay.de^$important
+! 2021-04-18 https://www.ebay.de
+||secureir.ebaystatic.com/cr/v/c1/gh_show_ads.js$important
+
+||vimeo-videdmcdn.neto.map.fastly.net
+||vimeocdn.com,llnwd.net,dmcdn.net
+||dmcdn.net^
+||*.wixmp.com^
+
+! 2021-08-10 https://onedrive.live.com
+onedrive.live.com##div.od-OverlayHost-overlay--opened.od-OverlayHost-overlay:nth-of-type(2)
+
+! 2020-10-03 pluto.tv
+||service-ad-impression-proxy.clusters.pluto.tv^
+
+! 2021-03-04 https://de.scribd.com
+de.scribd.com###outer_page_2 > div > .orientation_portrait.auto__doc_page_webpack_doc_page_blur_promo
+
+! 2023-03-19 https://www.cnx-software.com
+www.cnx-software.com##.goooooo-6.goooooo
+www.cnx-software.com###text-20 > .textwidget
+www.cnx-software.com###text-10 > .textwidget
+www.cnx-software.com##.header-top
+! 21.09.2024 https://www.cnx-software.com
+www.cnx-software.com##.gbigday-2.gbigday
+
+! 05.01.2026 https://www.cnx-software.com
+www.cnx-software.com##[href*="https://url4.cnx-software.com/"]
+www.cnx-software.com##.gbalday-single > [href] > .lazyloaded.ls-is-cached
+www.cnx-software.com##.gbalday-1.gbalday
+www.cnx-software.com## .lazyloaded
+! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

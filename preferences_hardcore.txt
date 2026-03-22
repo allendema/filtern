@@ -1,0 +1,47 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Preferences - Hardcore block
+# https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
+# https://github.com/allendema/filtern/raw/main/preferences_hardcore.txt
+
+! Hardcore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+||*.google.com^
+||*.google.*^
+||www.*.google.com^
+||www.*.google.*
+||google.*
+||www.google.*^$3p,important
+||google.*^$1p,important
+||www.google.*^$1p,important
+||www.google.com/favicon.ico$important
+
+||fb.com^$important
+||www.fb.com^$important
+||fb.net^$important
+||www.fb.net^^$important
+||www.facebook.net^$important
+||facebook.net^$important
+||facebook.com^
+||*.fb.com^
+||*.fb.net^
+||www.facebook.com^$important
+||*.*.facebook.com^$important
+||*.facebook.com^$important
+||static.*.fbcdn.net^$important
+|*-*.facebook.com^$important
+
+! 2021-08-24 https://www.amazon.co.uk
+||amazon.com.*^$important
+||www.amazon.*.*^$important
+
+/google-analytics.$first-party
+/googleanalytics.js$first-party
+-google-analytics.$first-party
+-google-analytics/$first-party
+/ga_setup.js$first-party
+
+||*.twitter.com^$important
+! 2021-07-28 https://twitter.com
+||twitter.com^$important
+! Hardcore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

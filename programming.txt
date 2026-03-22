@@ -1,0 +1,65 @@
+! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Version: 22.03.2026
+! Expires: 5 days
+
+# programming - remove warnings, irrelevant banners, links.
+# https://codeberg.org/allendema/filtern/raw/branch/main/programming.txt
+# https://github.com/allendema/filtern/raw/main/programming.txt
+
+! 8.8.2020 https://pastebin.com
+pastebin.com##.popup-container
+
+! 2022-04-05 https://github.com
+github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(4)
+github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(7)
+github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(10)
+! 2023-03-12 https://github.com
+github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(5)
+github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(13)
+
+! 2024-04-02 https://sound.stackexchange.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com###noscript-warning
+! 06.08.2024 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.mb8.mt32.ps-relative.js-overflowai-cta
+
+
+! 2024-04-18 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.py2.fs-body2.ff-sans.fc-white.bg-blue-400.js-announcement-banner
+! 12.09.2024 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.m0.p0.d-block
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.module.mb16.s-sidebarwidget
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.s-navigation
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.s-topbar--content
+
+! 13.09.2024 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.nav-links .nav-links
+! 2021-05-01 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.sm\:ai-center.sm\:fd-row.md\:fd-column.lg\:pr24.lg\:pl24.ai-center.jc-space-between.py12.px8.mx-auto.wmx12.grid
+
+! 13.07.2025 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.tex2jax_ignore.module
+! 02.10.2025 https://stackoverflow.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##.js-you-can-comment-banner-anon.ai-center.d-flex.bar-sm.ba.bc-purple-400.my8.p8.bg-purple-100.lg\:mt8
+! 18.08.2025 https://askubuntu.com
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com###noscript-warning
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##li.ps-relative:nth-of-type(4)
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##nav > .nav-links
+
+! 11.10.2025 https://medium.com
+||medium.com/_/graphql$important
+
+dev.to##+js(cookie-remover, "ahoy_visitor")
+dev.to#%#//scriptlet('remove-cookie')
+
+! 2023-03-23 https://www.geeksforgeeks.org
+www.geeksforgeeks.org###openInApp-modal
+www.geeksforgeeks.org##.whats-new-section
+www.geeksforgeeks.org###text-18 > .textwidget > div
+
+! 19.10.2025 https://www.whois.com
+www.whois.com##aside
+! 15.11.2025 https://sourceforge.net
+sourceforge.net###floating-content-wrapper
+
+! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,20 @@
+! Version: 22.03.2026
+! Expires: 5 days
+
+# Remove things pushing slop
+# https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
+# https://github.com/allendema/filtern/raw/main/slop_nudges.txt
+
+! Slop Nudges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ublock origin xpath docs: https://github.com/uBlockOrigin/uBlock-issues/wiki/Procedural-cosmetic-filters#subjectxpatharg
+! remove github actions context menu entry "e - explain" Slop - intentionally specific xpath
+! 2026.03.11
+!github.com##:xpath(//li[@aria-keyshortcuts="e"])
+github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keyshortcuts="e"])
+github.com##:xpath(//div[contains(@class,"developmentSectionContainer")])
+
+sourceforge.net###vibe-coding-bar
+
+! 18.03.2026 https://www.crunchbase.com
+www.crunchbase.com##scout-lazy-wrapper
+! Slop Nudges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
