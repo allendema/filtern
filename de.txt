@@ -1,14 +1,15 @@
-! Version: 22.03.2026
-! Expires: 5 days
+! Title: filtern filters - de
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# de
-# https://codeberg.org/allendema/filtern/raw/branch/main/de.txt
-# https://github.com/allendema/filtern/raw/main/de.txt
+! Description: Filters which apply to de_DE sites.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/de.txt
 
 ! de !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 2023-02-09 https://www.duden.de
-www.duden.de###aab-container
-
 ! 2021-11-14 https://studyflix.de
 studyflix.de##.up-modal-viewport
 studyflix.de##.-enabled.up-can-clean.huge-notification

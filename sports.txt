@@ -1,9 +1,15 @@
 ! Version: 22.03.2026
 ! Expires: 5 days
+! Title: filtern filters - sports
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# Remove banners, odds, etc. from sport sites
-# https://codeberg.org/allendema/filtern/raw/branch/main/sports.txt
-# https://github.com/allendema/filtern/raw/main/sports.txt
+! Description: Remove banners, odds, etc. from sport sites.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/sports.txt
 
 
 ! Sports !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

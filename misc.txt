@@ -1,9 +1,17 @@
-! Version: 22.03.2026
-! Expires: 5 days
 
 # Misc - Ads, Banners
 # https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
 # https://github.com/allendema/filtern/raw/main/misc.txt
+! Title: filtern filters - misc
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filters which apply to misc sites. Ads, Banners...
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
 
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 12/31/2019 maps.me
@@ -14,12 +22,13 @@
 ! 1/26/2020 agar.io
 ||*.zendesk.com^
 
-||vector.im^
-
 ! 4/12/2020 sitelock.com
 ||www.sitelock.com^$important
+
 ! 4/13/2020 ebay.de
-||www.ebay.de^$important
+!||www.ebay.de^$important
+||vector.im^
+
 ! 2021-04-18 https://www.ebay.de
 ||secureir.ebaystatic.com/cr/v/c1/gh_show_ads.js$important
 

@@ -1,10 +1,13 @@
-! Version: 22.03.2026
+! Title: filtern filters - preferences_wiki
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Theme and remove some cookies.
 ! Expires: 5 days
-
-# Preferences - Theme and remove some cookies
-# https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
-# https://github.com/allendema/filtern/raw/main/preferences_wiki.txt
-
+! Version: 23.03.2026
+! Homepage: https://codeberg.org/allendema/filtern
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
 
 ! Wiki !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! set theme to night mode

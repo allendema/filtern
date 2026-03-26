@@ -1,0 +1,5 @@
+Contact: allendema@noreply.codeberg.org
+Acknowledgments: https://codeberg.org/allendema/filtern
+Preferred-Languages: en
+Canonical: https://codeberg.org/allendema/filtern/.well-known/security.txt
+Expires: 2027-01-01T00:00:00z

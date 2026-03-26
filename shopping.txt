@@ -1,3 +1,16 @@
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filters which apply to shopping sites.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
+
+# shopping
+# https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
+# https://github.com/allendema/filtern/raw/main/shopping.txt
+
 ! Shopping !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! 27.05.2024 https://www.rewe.de

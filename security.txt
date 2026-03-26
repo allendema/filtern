@@ -1,3 +1,0 @@
-# Security
-## For any potential issues.
-xmpp:allen@tchncs.de

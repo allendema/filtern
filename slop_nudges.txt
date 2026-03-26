@@ -1,9 +1,13 @@
 ! Version: 22.03.2026
 ! Expires: 5 days
+! Title: filtern filters - slop nudges
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# Remove things pushing slop
-# https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
-# https://github.com/allendema/filtern/raw/main/slop_nudges.txt
+! Description: Remove things pushing slop.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
 
 ! Slop Nudges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! ublock origin xpath docs: https://github.com/uBlockOrigin/uBlock-issues/wiki/Procedural-cosmetic-filters#subjectxpatharg

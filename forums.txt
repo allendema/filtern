@@ -1,9 +1,15 @@
-! Version: 22.03.2026
-! Expires: 5 days
+! Title: filtern filters - de
+! Title: filtern filters - forums
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# Forums - Remove banners.
-# https://codeberg.org/allendema/filtern/raw/branch/main/de.txt
-# https://github.com/allendema/filtern/raw/main/de.txt
+! Description: Forums - Remove banners.
+! Expires: 5 days
+! Version: 23.03.2026
+! Last modified: Mon, 23 Mar 2026 00:00:00 +0000
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/forums.txt
 
 ! Forums !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

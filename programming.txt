@@ -1,11 +1,20 @@
 ! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Version: 22.03.2026
 ! Expires: 5 days
+! Title: filtern filters - Programming
+! Title: filtern filters - programming
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# programming - remove warnings, irrelevant banners, links.
-# https://codeberg.org/allendema/filtern/raw/branch/main/programming.txt
-# https://github.com/allendema/filtern/raw/main/programming.txt
+! Description: Remove warnings, irrelevant banners, links.
+! Description: Remove warnings, irrelevant banners, links and remove some cookies.
+! Expires: 5 days
+! Version: 23.03.2026
+! Homepage: https://codeberg.org/allendema/filtern
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/programming.txt
 
+! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 8.8.2020 https://pastebin.com
 pastebin.com##.popup-container
 
