@@ -7,5 +7,5 @@ labels:
   - ongoing
 ---
 
-For easier reproduction, state which list causes your issue and on which websites.
-Also, what version of the extension are you using?
+For easier reproduction, state which list causes your issue and on which websites.  
+Also state which browser and which version number of the extension are you using?
