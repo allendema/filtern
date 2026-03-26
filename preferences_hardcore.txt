@@ -29,7 +29,7 @@
 ||*.*.facebook.com^$important
 ||*.facebook.com^$important
 ||static.*.fbcdn.net^$important
-|*-*.facebook.com^$important
+||*-*.facebook.com^$important
 
 ! 2021-08-24 https://www.amazon.co.uk
 ||amazon.com.*^$important

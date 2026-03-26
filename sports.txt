@@ -1,5 +1,3 @@
-! Version: 22.03.2026
-! Expires: 5 days
 ! Title: filtern filters - sports
 ! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
@@ -60,5 +58,5 @@ www.flashscore.*##.section--nmb.section
 ! 10.11.2025 https://www.flashscore.de
 www.flashscore.*##tc > .sideMenu > .leftMenu__head
 ! 12.02.2026 https://www.flashscore.de
-www.flashscore.*#.outrightWidget
+www.flashscore.*##.outrightWidget
 ! Sports !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
