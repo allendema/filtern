@@ -1,5 +1,3 @@
-! Version: 22.03.2026
-! Expires: 5 days
 ! Title: filtern filters - slop nudges
 ! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
@@ -19,9 +17,15 @@
 github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keyshortcuts="e"])
 github.com##:xpath(//div[contains(@class,"developmentSectionContainer")])
 
-sourceforge.net###vibe-coding-bar
 sourceforge.net##vibe-coding-bar
 
 ! 18.03.2026 https://www.crunchbase.com
 www.crunchbase.com##scout-lazy-wrapper
 ! Slop Nudges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2026.01.28 https://de.restaurantguru.com
+restaurantguru.com##.pierre-assist-wrapper
+! Summary of reviews
+www.trustpilot.com##.styles_summaryContainer__XpiRw > div:nth-of-type(1)
+! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
