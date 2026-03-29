@@ -41,6 +41,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/preferences_css.txt
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
 # use preferences_filtering list
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_filtering.txt
+# use preferences_wildcards list
+https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wildcards.txt
 # use preferences_hardcore list
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
 ```
