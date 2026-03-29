@@ -25,6 +25,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
 https://codeberg.org/allendema/filtern/raw/branch/main/forums.txt
 # use shopping list
 https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
+# use allowed list
+https://codeberg.org/allendema/filtern/raw/branch/main/allowed.txt
 ```
 
 ```sh

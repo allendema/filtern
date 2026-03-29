@@ -1,0 +1,102 @@
+! Title: filtern filters - allowed
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filters which apply to many sites via wildcards.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/allowed.txt
+
+
+! Allowed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2021-11-28 https://431ef1f7-b8ed-496c-b486-bef01d1d5ef9.moz-extension-scheme
+@@||filters.adtidy.org/extension/ublock/filters/*$xhr,domain=431ef1f7-b8ed-496c-b486-bef01d1d5ef9.moz-extension-scheme
+
+! 3/14/2020 youtube.com
+@@||youtube-ui.l.google.com^$script,domain=www.youtube.com
+@@||youtube-ui.l.google.com^$script
+! 3/15/2020 youtube.com
+@@||youtube-ui.l.google.com^$image,domain=www.youtube.com
+@@||youtube-ui.l.google.com^$script,domain=www.youtube.com
+@@||youtube-ui.l.google.com^$stylesheet,domain=www.youtube.com
+! 30.7.2020 youtube.com
+@@||youtube-ui.l.google.com^$xhr,domain=www.youtube.com
+! 2021-02-03 https://music.youtube.com
+@@||youtube-ui.l.google.com^$image,domain=music.youtube.com
+@@||youtube-ui.l.google.com^$domain=music.youtube.com
+
+
+! 2021-06-08 https://tracking.dpd.de
+@@||tracking.dpd.de^$domain=tracking.dpd.de
+@@||tracking.dpd.de^$1p
+
+! 3/15/2020
+@@||matrix-client.matrix.org^
+
+! 2021-11-16
+@@||cdn.jsdelivr.net/npm/mathjax@*/*$script
+! 2021-11-27
+@@||ssl.p.jwpcdn.com/player/v/*/jwplayer.js$script
+
+! 3/1/2020 dazn.com
+@@||*.amazonaws.com^$domain=www.dazn.com
+! 1/13/2020 twitter.com
+@@||abs.twimg.com^$script,domain=twitter.com
+
+! 2021-10-12 https://www.livescore.com
+@@||images.performgroup.com^$image,domain=livescore.com
+@@||image.api.uk1.sportal365.com/process/smp-image-api/livescore.com/*$image,domain=livescore.com
+! 2021-11-08 https://www.kapiert.de
+@@||cdnjs.cloudflare.com/ajax/libs/mathjax/*/fonts/HTML-CSS/*$image
+@@||cdnjs.cloudflare.com/ajax/libs/mathjax/*$script
+
+! 2020-11-15
+@@||*.cloudfront.net^$domain=snapchat.com|gitter.im|pluto.tv|soundcloud.com|aspor.com.tr|mozilla.org|www.arcgis.com|viamichelin.com|joyn.de|www.site24x7.com|atlassian.net|atlassian.net|alibaba.com|www.dazn.com
+@@||*.cloudfront.net^$image
+
+! prevent noplaylist blocking youtube.com the first time a link is clicked
+@@||youtube-ui.l.google.com^
+! 18.08.2024 https://www.youtube.com
+@@||fonts.gstatic.com/*.svg$xhr
+@@||fonts.gstatic.com/*.svg$image
+@@||fonts.gstatic.com^$domain=youtube.com|music.youtube.com
+
+
+@@||fonts.googleapis.com/css$stylesheet,domain=music.youtube.com
+! 22.10.2025 https://play.google.com
+! 18.12.2025 https://adstransparency.google.com
+@@||fonts.gstatic.com^$font,domain=~google.com|~play.google.com
+@@||play.google.com^$inline-font,domain=play.google.com
+
+! 2022-09-12 https://www.youtube.com
+@@||youtube-ui.l.google.com^$media,domain=youtube.com
+@@||*.googlevideo.com^$xhr,domain=youtube.com
+@@||*.googlevideo.com/videoplayback$xhr,domain=youtube.com
+
+! 2021-08-11 https://github.com
+@@||*.amazonaws.com^$domain=github.com
+
+! 2023-04-08 https://www.cwtv.com
+@@||*.ipv4.cws.conviva.com^$xhr
+@@||js-agent.newrelic.com^$script,domain=cwtv.com
+@@||jssdks.mparticle.com^
+@@||*.conviva.com^
+@@||sb.scorecardresearch.com/*/streamingtag_plugin_jwplayer.js$script,domain=www.cwtv.com
+@@||prd.jwpltx.com/v1/jwplayer6/*
+
+! 2023-04-24 https://pluto.tv
+@@||*.amazonaws.com^$xhr,domain=pluto.tv
+
+! 2023-04-26 https://www.google.com
+@@||www.google.com/recaptcha/*$script
+@@||www.gstatic.com/recaptcha/*$domain=www.google.com
+@@||www.google.com/recaptcha/*$domain=www.google.com
+! 2023-04-27 https://www.google.com
+@@||www.gstatic.com/recaptcha/*
+
+! 30.6.2020 discord.com
+@@||www.google.com/js/bg/*$script,domain=www.google.com
+
+! Allowed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
