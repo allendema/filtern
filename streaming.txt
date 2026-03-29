@@ -1,0 +1,85 @@
+! Title: filtern filters - streaming
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filters which apply to streaming sites.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/streaming.txt
+
+! WWWW Streaming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 12/31/2019
+||multi.idocdn.com^
+||iamcdn.net^
+
+! 4/12/2020
+||ping.staticmoly.me^
+||netu.tv/js/restore_googl.js
+
+! 17.7.2020
+||libedgolart.com^
+
+! 2020-10-17 sport365.sx
+||tags2.adshell.net^
+||s1.sport365.cloud/js/advertisement.js
+
+! 2022-06-10 https://uptostream.com
+||uptostream.com/api/checkIp?token=*
+||*/assets/css/silvermine-videojs-airplay.css?
+
+! 2021-07-03 https://streamable.com
+||statics.streamable.com^$important
+
+! 2021-07-23 https://videovak.com
+||*.*/*/watchlogger.*$important
+
+! 2021-02-28 https://streamable.com
+||statics.b-cdn.net^$image,domain=streamable.com
+||statics.b-cdn.net
+
+! 2021-03-03 https://yodaplayer.yodacdn.net
+||code.ainsyndication.com/v2/collect.php
+||yodaplayer.yodacdn.net/ads.js$domain=yodaplayer.yodacdn.net,important
+||yodaplayer.yodacdn.net/banners/*
+
+! 2022-03-20 https://lookmovie2.to
+lookmovie##.notifyjs-prem_notify-error.notifyjs-prem_notify-base
+! 2022-03-27 https://lookmovie2.to
+lookmovie2.to##.notifyjs-prem_notify-error.notifyjs-prem_notify-base
+
+$popup,domain=lookmovie.*
+
+! 2021-10-11 https://lookmovie.io
+||lookmovie*^$popup,1p
+||hutfpjxlq.xyz^
+
+! 2021-10-14 https://de2.sportplus.live
+de2.sportplus.live##.container__right > .active.container__branding-img
+de2.sportplus.live##.container__left > .active.container__branding-img
+de2.sportplus.live##.card-banner__cont
+de2.sportplus.live##div.mt24.card:nth-of-type(5)
+de2.sportplus.live##.card-banner__row-container
+
+! 2021-08-15 https://lookmovie
+||cntr.*^$important
+||thisistheplacetowatch.com/images/logo1.png^$important
+||thisistheplacetowatch.com^$popup,1p
+||lookmovie.*/images/logo1.png^$important
+||lookmovie*/images/logo1.png^$important
+||metrika.*.*^
+
+! 2022-06-10
+||vido.*^$popup
+
+! 23.02.2026 https://www.justwatch.com
+www.justwatch.com##.offer-wrapper
+
+! 15.02.2026 https://twitchnosub.com
+||twitchnosub.com/ad/ad.html$1p,important
+||twitchnosub.com/ads/$important
+||twitchnosub.com/metrics/gate
+twitchnosub.com##div[class*="accessGate"]
+!twitchnosub.com##+js(prevent-addEventListener.js(mousemove)
+! WWWW Streaming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
