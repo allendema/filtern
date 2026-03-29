@@ -27,7 +27,6 @@
 @@||youtube-ui.l.google.com^$image,domain=music.youtube.com
 @@||youtube-ui.l.google.com^$domain=music.youtube.com
 
-
 ! 2021-06-08 https://tracking.dpd.de
 @@||tracking.dpd.de^$domain=tracking.dpd.de
 @@||tracking.dpd.de^$1p
@@ -63,7 +62,6 @@
 @@||fonts.gstatic.com/*.svg$image
 @@||fonts.gstatic.com^$domain=youtube.com|music.youtube.com
 
-
 @@||fonts.googleapis.com/css$stylesheet,domain=music.youtube.com
 ! 22.10.2025 https://play.google.com
 ! 18.12.2025 https://adstransparency.google.com
@@ -98,5 +96,4 @@
 
 ! 30.6.2020 discord.com
 @@||www.google.com/js/bg/*$script,domain=www.google.com
-
 ! Allowed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
