@@ -64,7 +64,7 @@ For example, when using a list which might have previously been good, but now th
 > [!NOTE]
 > Example of [trustedListPrefixes](https://github.com/gorhill/uBlock/wiki/Advanced-settings#trustedlistprefixes) in [Advanced Settings](https://github.com/gorhill/uBlock/wiki/Advanced-settings#trustedlistprefixes)  
 > Be sure to point to your trusted repository and not to this repo:  
-> ```trustedListPrefixes ublock- https://codeberg.org/allendema/filtern/src/branch/main/preferences_```
+> ```trustedListPrefixes ublock- https://codeberg.org/allendema/filtern/raw/branch/main/preferences_```
 
 ## Issues
 Open a new issue if something is not working as you expect.
