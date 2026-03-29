@@ -23,6 +23,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
 https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
 # use forums list
 https://codeberg.org/allendema/filtern/raw/branch/main/forums.txt
+# use social list
+https://codeberg.org/allendema/filtern/raw/branch/main/social.txt
 # use shopping list
 https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
 # use streaming list

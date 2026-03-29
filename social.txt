@@ -1,0 +1,124 @@
+! Title: filtern filters - social
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filters which apply to social media.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/social.txt
+
+! Social !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2021-02-28 https://twitter.com
+! 12/29/2019 twitter.com
+||twitter.com/i/js_inst?c_name=ui_metrics
+
+# test
+flickr.com##.moola-search-div:has(:has-text(/pro/i))
+
+! 2023-03-12 https://www.tumblr.com
+www.tumblr.com###glass-container
+||www.tumblr.com/dashboard/iframe/consent$subdocument
+!##.lightbox-visible
+
+! 2022-09-03 https://www.tiktok.com
+! remove login wall
+! from https://libreddit.headpat.exchange/r/uBlockOrigin/comments/1b0ml98/does_anyone_knows_how_block_the_tiktok_login_wall/
+tiktok.com###login-modal,[class*="DivModalContainer"]
+! which is needed of the 3 ???
+tiktok.com##body:style(overflow: auto !important;)
+tiktok.com##html:style(overflow: auto !important;)
+tiktok.com##html,body:style(overflow: auto !important;)
+! 2022-10-18 https://www.tiktok.com
+www.tiktok.com##.DivKeyboardShortcutContainer
+
+! 2024-03-29 https://www.tiktok.com
+! this hides the left/top right side download app buttons
+www.tiktok.com##div[class*=DivHeaderRightContainer]
+www.tiktok.com##div[class*=DivFrameContainer]
+www.tiktok.com##div[class*=DivFooterContainer]
+www.tiktok.com##div[class*="StyledLogin"]
+www.tiktok.com##body:remove-class(StyledLogin)
+www.tiktok.com##body:remove-class(LoginHint)
+www.tiktok.com##body:remove-class(*DivFooterContainer*)
+www.tiktok.com##div:remove-class(*DivFooterContainer*)
+www.tiktok.com##body:remove-attr(StyledLogin)
+www.tiktok.com##body > div:has-text(LoginHint)
+www.tiktok.com##body > div:has-text(DivFooterContainer)
+www.tiktok.com##body > div:has-text(DivFixedTopContainer)
+www.tiktok.com##body:remove-class(StyledLogin)
+www.tiktok.com##body:remove-class(LoginHint)
+www.tiktok.com##body:remove-class(DivFooterContainer)
+www.tiktok.com##div:remove-class(DivFooterContainer)
+www.tiktok.com##body:remove-attr(StyledLogin)
+
+www.tiktok.com##body:remove-class(*DivFixedTopContainer*)
+www.tiktok.com##body > div:has-text(StyledLeftSidePrimaryButtonRedesign)
+www.tiktok.com##div[class*=DivActionBarContainer]
+www.tiktok.com##div[class*=SubMainNavContentContainer]
+www.tiktok.com##div[class*=DivNoticeContentContainer]
+www.tiktok.com##div[class*=DivKeyboardShortcutContainer]
+! 2022-08-28 https://www.tiktok.com
+||/sdk_lite/plugins/report.*.maliva.js$script,important
+||/tiktok-cookie-banner/mali_va/*/web/*.system.js$script
+||*/sdk_lite/plugins/*.maliva.js
+!||/tiktok-cookie-banner/*$script
+
+! 23.12.2025 https://www.tiktok.com
+www.tiktok.com###pns-communication-service
+
+! 26.12.2025 https://www.tiktok.com
+||www.tiktok.com/*/screen_time/$important
+||ttwstatic.com/*/static/js/async/ad-report-loadable.*.js$important
+
+tiktok.com#%#//scriptlet('remove-cookie')
+tiktok.com##+js(cookie-remover)
+
+tiktok.com##+js(cookie-remover, "perf_feed_cache")
+tiktok.com##+js(cookie-remover, "ttwid")
+tiktok.com##+js(cookie-remover, "tt_chain_token")
+tiktok.com##+js(cookie-remover, *)
+
+tiktok.com/passport
+www.tiktok.com/*/compliance/
+www.tiktok.com/tiktok/v1/community_notes/intake
+www.tiktok.com/*/app_open_times
+www.tiktok.com/api/share/settings
+www.tiktok.com/*/business
+
+tiktokw.eu/web/report
+!ttwstatic.com/obj/tiktok_web_login_static
+
+! 2021-08-14 https://vk.com
+vk.com##.UnauthActionBox--rich.UnauthActionBox
+vk.com###box_layer_wrap
+! 2021-11-06 https://vk.com
+vk.com###box_layer_bg
+
+! 01.09.2025 https://www.flickr.com
+www.flickr.com###stacking-overlay-container
+
+www.reddit.com,old.reddit.com##+js(cookie-remover, "uid")
+www.reddit.com,old.reddit.com#%#//scriptlet('remove-cookie')
+www.reddit.com,old.reddit.com##+js(cookie-remover, "_GRECAPTCHA")
+
+www.google.*##+js(cookie-remover, "_GRECAPTCHA")
+www.google.*##+js(cookie-remover, "_GRECAPTCHA")
+
+imgur.com#%#//scriptlet('remove-cookie')
+imgur.com##+js(cookie-remover)
+imgur.com##+js(cookie-remover, "user_id")
+
+medium.com#%#//scriptlet('remove-cookie')
+medium.com##+js(cookie-remover)
+
+www.reddit.com,old.reddit.com##.coachmark.nd\:visible > .nd\:visible > activate-feature
+www.reddit.com,old.reddit.com##div.mt-md > faceplate-tracker
+
+! 06.01.2026 https://letterboxd.com
+letterboxd.com##.js-carousel-container.videostore-carousel.products
+! 20.02.2026 https://letterboxd.com
+! giant video/banner marked as "ad"
+letterboxd.com##.featured-video
+! Social !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
