@@ -1,3 +1,5 @@
+! Title: filtern filters - shopping
+! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
 ! Description: Filters which apply to shopping sites.
@@ -7,19 +9,35 @@
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
 
-# shopping
-# https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
-# https://github.com/allendema/filtern/raw/main/shopping.txt
-
 ! Shopping !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 ! 27.05.2024 https://www.rewe.de
 ||shop.rewe-static.de/rewe-duc-base/ads/
 ||eum.instana.rewe-group.com^
-||rewe.de/api/xrd/events
-||rewe.de/api/xrd/page-data/data-layer
 ||rewe.de/shop/api/productlist/impressions
 ||rewe.de/shop/api/productlist/interactions
+! dom loading times measurements
+||rewe.de/shop/homepage/tracking
+! TODO: on shop landing page: browser inspect: .fsr-Header__AdInfo => flavedo.io but the links are not visible
+
+! 23.03.2026 https://www.rewe.de/shop
+! https://github.com/gorhill/ublock/wiki/Resources-Library#set-constantjs-
+!          browser -> search -> isAdblockerEnabled
+! browser debugger -> search -> isAdblockerEnabled
+rewe.de##+js(set-constant, isAdblockerEnabled, false)
+
+! 23.03.2026 https://www.rewe.de/shop
+! XRD is Ad*be Launch
+! browser console -> XRD.tracking -> _adblock
+||rewe.de/api/xrd/events
+||rewe.de/api/xrd/page-data/*
+! will make "browser console -> DOM -> XRD" be empty
+rewe.de##+js(set-constant, XRD.trackingOptOut, true)
+
+! 23.03.2026 https://www.rewe.de/shop
+! gamSlots does not sound good: https://github.com/search?q=gamSlots&type=code
+! but seems to be handled as noop by a ublock origin shim/scriptlet, good!
+!rewe.de##+js(set-constant, gamSlots, noopFunc)
+!rewe.de##+js(set-constant, gamSlots.topbanner, noopFunc)
 
 ! 11.06.2024 https://shop.alnatura.de
 shop.alnatura.de##.modal-content
@@ -29,5 +47,4 @@ shop.alnatura.de##.modal-content
 
 ! 29.09.2025 https://www.idealo.de
 ||www.idealo.*/mvc/pagetracking/$1p,important
-
 ! Shopping !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
