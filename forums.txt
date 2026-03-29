@@ -1,4 +1,3 @@
-! Title: filtern filters - de
 ! Title: filtern filters - forums
 ! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
@@ -12,7 +11,6 @@
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/forums.txt
 
 ! Forums !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 ! 2023-03-04 https://www.digital-eliteboard.com
 www.digital-eliteboard.com##.js-notices.notices--isMulti.notices--bottom_fixer.notices > .notice--dark.js-notice.notice > .notice-content
 www.digital-eliteboard.com##.notice--hasImage.notice--dark.js-notice.notice
@@ -28,5 +26,4 @@ lowendtalk.com##.PanelColumn.Column
 
 ! 2021-11-13 http://sultanovic.net
 sultanovic.net###cc55
-
 ! Forums !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
