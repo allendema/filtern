@@ -1,0 +1,51 @@
+! Title: filtern filters - preferences_filtering
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Filtering based on taste preferences.
+! Expires: 5 days
+! Version: 23.03.2026
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Homepage: https://codeberg.org/allendema/filtern
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_filtering.txt
+
+! Preference Filtering !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! removes card completely
+!news.ycombinator.com##span.titleline:has(:has-text(/[iI]s [hH]iring/))
+!news.ycombinator.com##body tr.athing:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+
+! 2026-02
+! misc
+news.ycombinator.com##body span.titleline:has-text(/[iI]s [hH]iring/)
+
+! slop - hide title and link while still indicating that something is missing.
+news.ycombinator.com##body span.titleline:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+
+! filter out by username - Slop comments
+! FIXME currently also removes all its replies
+news.ycombinator.com##div[class*="hnuser"]:has-text(/patchnull/)
+! this only remove the username text but not the actual comment itself - #FIXME
+news.ycombinator.com##:xpath(//span[@class="comhead"]//a[contains(@class,"hnuser")]):has-text(/patchnull/)
+
+! filter out by username
+lobste.rs##div[class*="details"]:has-text(/simonw/)
+! do not work
+!lobste.rs##div[class*="details"][class*="u-author h-card user_is_author"]
+!lobste.rs##div[class*="details"][class*="u-author h-card user_is_author"]:has-text(simonw)
+
+! https://lobste.rs/s/jqibwu/ublock_filter_hide_vibecoding_tag
+lobste.rs##.tag_vibecoding.tag
+
+! Git !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 26.10.2024 https://github.com
+# recommendations for repos
+github.com##body > div[class*="Link"]:has(a[href*="matrix-org"])
+github.com##origin > div[class*="Link"]:has(a[href*="matrix-org"])
+github.com##.flex-1.ws-normal.Truncate-text:has-text(matrix-org)
+github.com##.flex-1.ws-normal.Truncate-text:has-text(element)
+github.com##.flex-1.ws-normal.Truncate-text:has-text(Matrix)
+github.com##.flex-1.ws-normal.Truncate-text:has-text(matrix)
+! 19.02.2025 https://github.com
+github.com##.border-bottom.mb-5.feed-right-sidebar > .rounded-2.p-3.color-border-default.border.color-bg-default.mb-5
+! Git !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Preference Filtering !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

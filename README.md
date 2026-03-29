@@ -33,6 +33,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_css.txt
 # use preferences_wiki list
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
+# use preferences_filtering list
+https://codeberg.org/allendema/filtern/raw/branch/main/preferences_filtering.txt
 # use preferences_hardcore list
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
 ```
