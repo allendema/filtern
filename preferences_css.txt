@@ -1,9 +1,13 @@
-! Version: 22.03.2026
-! Expires: 5 days
+! Title: filtern filters - preferences_css
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
-# CSS rules based on preferences
-# https://codeberg.org/allendema/filtern/raw/branch/main/preferences_css.txt
-# https://github.com/allendema/filtern/raw/main/preferences_css.txt
+! Description: CSS styles based on preferences.
+! Expires: 5 days
+! Version: 23.03.2026
+! Homepage: https://codeberg.org/allendema/filtern
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_css.txt
 
 ! CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! https://notes.unindented.org/notes/note_dark_mode_for_hacker_news/
@@ -12,9 +16,7 @@
 ! https://jahed.dev/2023/06/02/simple-dark-mode-with-ublock-origin/
 news.ycombinator.com##html:style(filter: invert(95%) !important;)
 news.ycombinator.com##td[bgcolor="#ff6600"]:style(filter: invert(105%) !important;)
-! 2026-02
-! has-text in ublock origin supports regex, so use regex for multiple word matching
-! https://redlib.catsarch.com/r/uBlockOrigin/comments/13tvexc/achieving_best_performance_with_hastext/
+
 ! 03.11.2025 https://stackoverflow.com
 stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com##html:style(filter: invert(90%) !important;)
 ! CSS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
