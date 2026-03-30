@@ -48,4 +48,14 @@
 ||*.twitter.com^$important
 ! 2021-07-28 https://twitter.com
 ||twitter.com^$important
+
+! 2020-09-06
+||www.google.*^
+
+! https://github.com/gorhill/uBlock/wiki/Privacy-stuff#gravatar-et-al
+||gravatar.com^$third-party
+
+! prevents from accessing any flavor of canvas API except 2d
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#prevent-canvasjs-
+*##+js(prevent-canvas, !2d)
 ! Hardcore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
