@@ -48,6 +48,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
 ```
 
 ## About
+My filters and rules for use with uBlock Origin.
+
 List names with the prefix `preferences_` contain some rules which modify appearance, content, cookies, browser local storage, etc. for websites.  
 List names with the prefix `preferences_` contain some rules which need to be trusted in uBlock Origin to work.
 

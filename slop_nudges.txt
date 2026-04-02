@@ -39,3 +39,6 @@ lobste.rs##div.details:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Age
 ! completely remove such tags
 ! https://lobste.rs/s/jqibwu/ublock_filter_hide_vibecoding_tag
 lobste.rs##.tag_vibecoding.tag
+
+! slop thumbnails
+||tarnkappe.info^

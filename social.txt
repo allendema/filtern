@@ -80,6 +80,11 @@ tiktok.com##+js(cookie-remover, "ttwid")
 tiktok.com##+js(cookie-remover, "tt_chain_token")
 tiktok.com##+js(cookie-remover, *)
 
+!tiktok.com##+js(remove-cache-storage-item, f_s_1)
+!tiktok.com##+js(set-local-storage-item, f_s_1, $remove$)
+!tiktok.com##+js(set-local-storage-item, f_s_1, noopFunc)
+tiktok.com##+js(set-local-storage-item, f_s_1, {})
+
 tiktok.com/passport
 www.tiktok.com/*/compliance/
 www.tiktok.com/tiktok/v1/community_notes/intake
