@@ -4,7 +4,7 @@
 
 ! Description: Filtering based on taste preferences.
 ! Expires: 5 days
-! Version: 23.03.2026
+! Version: 04.04.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_filtering.txt
@@ -24,6 +24,9 @@ news.ycombinator.com##body span.titleline:has-text(/[iI]s [hH]iring/)
 ! slop - hide title and link while still indicating that something is missing.
 news.ycombinator.com##body span.titleline:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
 
+! hide posts containing links to slop while still indicating that something is missing.
+news.ycombinator.com##body span.titleline:has-text(/anthropic.com|chatgpt.com|openai.com,gemini.google.com|.*\.ai$/i)
+
 ! filter out by username - Slop comments
 ! FIXME currently also removes all its replies
 news.ycombinator.com##div[class*="hnuser"]:has-text(/patchnull/)
@@ -41,6 +44,9 @@ lobste.rs##.tag_vibecoding.tag
 
 ! slop - hide title and link while still indicating that something is missing.
 lobste.rs##div.details:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+
+! hide posts containing links to slop while still indicating that something is missing.
+lobste.rs##div.details:has-text(/anthropic.com|chatgpt.com|openai.com,gemini.google.com|.*\ai$/i)
 
 ! Git !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 26.10.2024 https://github.com
