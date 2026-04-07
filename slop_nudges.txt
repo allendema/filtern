@@ -4,7 +4,7 @@
 
 ! Description: Remove things pushing slop.
 ! Expires: 5 days
-! Version: 04.04.2026
+! Version: 07.04.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
@@ -16,6 +16,8 @@
 !github.com##:xpath(//li[@aria-keyshortcuts="e"])
 github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keyshortcuts="e"])
 !github.com##:xpath(//div[contains(@class,"developmentSectionContainer")])
+! commit id -> file -> context menu -> ask
+github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keyshortcuts="a"])
 
 sourceforge.net##vibe-coding-bar
 

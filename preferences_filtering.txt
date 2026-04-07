@@ -4,7 +4,7 @@
 
 ! Description: Filtering based on taste preferences.
 ! Expires: 5 days
-! Version: 04.04.2026
+! Version: 07.04.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_filtering.txt
@@ -12,7 +12,7 @@
 ! Preference Filtering !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! removes card completely
 !news.ycombinator.com##span.titleline:has(:has-text(/[iI]s [hH]iring/))
-!news.ycombinator.com##body tr.athing:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+!news.ycombinator.com##body tr.athing:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw|Coding Agents/)
 
 ! 2026-02
 ! misc
@@ -22,7 +22,7 @@
 news.ycombinator.com##body span.titleline:has-text(/[iI]s [hH]iring/)
 
 ! slop - hide title and link while still indicating that something is missing.
-news.ycombinator.com##body span.titleline:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+news.ycombinator.com##body span.titleline:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw|Coding Agents/)
 
 ! hide posts containing links to slop while still indicating that something is missing.
 news.ycombinator.com##body span.titleline:has-text(/anthropic.com|chatgpt.com|openai.com,gemini.google.com|.*\.ai$/i)
@@ -43,7 +43,7 @@ lobste.rs##div[class*="details"]:has-text(/simonw/)
 lobste.rs##.tag_vibecoding.tag
 
 ! slop - hide title and link while still indicating that something is missing.
-lobste.rs##div.details:has-text(/LLM|AI|MCP|Claude|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw/)
+lobste.rs##div.details:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw|Coding Agents/)
 
 ! hide posts containing links to slop while still indicating that something is missing.
 lobste.rs##div.details:has-text(/anthropic.com|chatgpt.com|openai.com,gemini.google.com|.*\ai$/i)
