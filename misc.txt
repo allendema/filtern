@@ -55,4 +55,8 @@ www.cnx-software.com##[href*="https://url4.cnx-software.com/"]
 www.cnx-software.com##.gbalday-single > [href] > .lazyloaded.ls-is-cached
 www.cnx-software.com##.gbalday-1.gbalday
 www.cnx-software.com## .lazyloaded
+
+! phish
+||ostatus.org^
+
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
