@@ -1,6 +1,8 @@
 # filtern
 
-Filters for uBlock Origin [`uBlock Origin`](https://github.com/gorhill/uBlock).
+## About
+My filters and rules for use with uBlock Origin.  
+[`uBlock Origin`](https://github.com/gorhill/uBlock)
 
 ## Naming convention
 
@@ -9,6 +11,12 @@ You can use all of the lists, but keep in mind that lists prefixed with `prefere
 To import them into uBlock Origin in one go, the following sections   
 can be copied and pasted into the "import url" field of the extension.
 Remove the ones you don't need.
+
+## Usage
+
+List names with the prefix `preferences_` contain some rules which modify appearance, content, cookies, browser local storage, etc. for websites.  
+List names with the prefix `preferences_` contain some rules which need to be trusted in uBlock Origin to work.
+
 
 ```sh
 # use programming list
@@ -46,12 +54,6 @@ https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wildcards.txt
 # use preferences_hardcore list
 https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
 ```
-
-## About
-My filters and rules for use with uBlock Origin.
-
-List names with the prefix `preferences_` contain some rules which modify appearance, content, cookies, browser local storage, etc. for websites.  
-List names with the prefix `preferences_` contain some rules which need to be trusted in uBlock Origin to work.
 
 ## trustedListPrefixes
 > [!NOTE]

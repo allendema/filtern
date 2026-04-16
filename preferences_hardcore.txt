@@ -4,7 +4,7 @@
 
 ! Description: Preferences - Hardcore block.
 ! Expires: 5 days
-! Version: 23.03.2026
+! Version: 16.04.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
