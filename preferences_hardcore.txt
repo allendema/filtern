@@ -39,6 +39,10 @@
 ||amazon.com.*^$important
 ||www.amazon.*.*^$important
 
+||tiktokpangle.us^
+||tiktokpangle.eu^
+||tiktokpangle.com^
+
 /google-analytics.$first-party
 /googleanalytics.js$first-party
 -google-analytics.$first-party
@@ -55,7 +59,134 @@
 ! https://github.com/gorhill/uBlock/wiki/Privacy-stuff#gravatar-et-al
 ||gravatar.com^$third-party
 
-! prevents from accessing any flavor of canvas API except 2d
+! docs !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-remote-fonts
+!https://github.com/gorhill/uBlock/wiki/Resources-Library#prevent-canvasjs-
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#close-windowjs-
+
+! syntax
+!  #@#+js() is for overwriting rules (as seen converted in the logger)
+! syntax
+
+! remove a header from response, only a handful of them are supported
+! https://github.com/gorhill/ublock/wiki/static-filter-syntax#response-header-filtering
+! cosmetic filter does not work if exception for this filter or filter with negated domain exist in other list - this is not cosmetic filter?
+! https://github.com/uBlockOrigin/uBlock-issues/issues/388
+! domains
+! programming domains = developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io
+! misc domains        = challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com
+! invdious doains     = invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/
+! domains
+! docs !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+!
+! prevent webrtc https://github.com/gorhill/uBlock/wiki/Resources-Library#nowebrtcjs-
+*##+js(nowebrtc)
+!
+!
+!
+!
+!
+! set-constant - window.HTMLMediaElement.autoplay !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#set-constantjs-
+!
+! set autoplay to false. Some sites will still autoplay
+*##+js(set-constant, window.HTMLMediaElement.autoplay, false)
+! excepctions for the wildcard in "preferences_hardcore"
+! invidious
+invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/#@#+js(set-constant, window.HTMLMediaElement.autoplay, false)
+!
+!
+!
+!
+! scriptlet - abort-on-property-write - document.cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#abort-on-property-writejs-
+!
+*##+js(abort-on-property-write, document.cookie)
+! excepctions for the wildcard in "preferences_hardcore"
+! allow - scriptlet - abort-on-property-write - specific - programming
+developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(abort-on-property-write, document.cookie)
+! allow - scriptlet - abort-on-property-write - specific - misc
+challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(abort-on-property-write, document.cookie)
+! scriptlet - prevent-canvas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+!
+! scriptlet - prevent-canvas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#prevent-canvasjs-
+!
+! prevents from accessing any flavor of canvas API except 2d
 *##+js(prevent-canvas, !2d)
+! exepctions for the wildcard in "preferences_hardcore"
+! allow - scriptlet - prevent-canvas - specific - programming
+developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(prevent-canvas, !2d)
+! allow - scriptlet - prevent-canvas - specific - misc
+challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(prevent-canvas, !2d)
+! scriptlet - prevent-canvas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+!
+! scriptlet - remove-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#remove-cookiejs-
+! Removes current page cookies specified by name.
+*##+js(remove-cookie)
+! exepctions for the wildcard in "preferences_hardcore"
+! allow - scriptlet - remove-cookie - specific - programming
+developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(remove-cookie)
+! allow - scriptlet - remove-cookie - specific - misc
+challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(remove-cookie)
+! allow - scriptlet - remove-cookie - wildcard - regex - git subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
+/^git(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
+! allow - scriptlet - remove-cookie - wildcard - regex - invidious.io instances and invdious subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
+invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
+! allow - scriptlet - remove-cookie - specific - git forges
+debian.org,launchpad.net,gnome.org,kde.org,codeberg.org#@#+js(remove-cookie)
+! scriptlet - remove-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+!
+! set-constant - document.hasStorageAccess !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#set-constantjs-
+! Creates property and initializes it with a value from a predefined set.
+! undefined, false, true, null, noopFunc, TrueFunc, falseFunc, throwFunc, '', {}, []
+!
+*##+js(set-constant, document.hasStorageAccess, false)
+! exepctions for the wildcard in "preferences_hardcore"
+! allow - scriptlet - document.hasStorageAccess - specific - programming
+developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(set-constant, document.hasStorageAccess, false)
+! allow - scriptlet - document.hasStorageAccess - specific - misc
+challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(set-constant, document.hasStorageAccess, false)
+! allow - scriptlet - document.hasStorageAccess - wildcard - regex - invidious.io instances and invdious subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
+invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$#@#+js(set-constant, document.hasStorageAccess, false)
+! set-constant - document.hasStorageAccess !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+!
+!
+!
+! header - set-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! https://github.com/gorhill/ublock/wiki/static-filter-syntax#response-header-filtering
+!
+! remove a header from response, only a handful of them are supported
+! cosmetic filter does not work if exception for this filter or filter with negated domain exist in other list - this is not cosmetic filter?
+! https://github.com/uBlockOrigin/uBlock-issues/issues/388
+*##^responseheader(set-cookie)
+! exepctions for the wildcard in "preferences_hardcore"
+! allow - scriptlet - set-cookie - specific - programming
+developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#^responseheader(set-cookie)
+! allow - scriptlet - set-cookie - specific - misc
+challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#^responseheader(set-cookie)
+! invidious
+invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,invidious.tiekoetter.com,/^invidious(?:\.[^.]+){1,2}$/#@#^responseheader(set-cookie)
+! header - set-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 ! Hardcore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
