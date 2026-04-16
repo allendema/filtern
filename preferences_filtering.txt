@@ -43,11 +43,11 @@ lobste.rs##div[class*="details"]:has-text(/simonw/)
 !lobste.rs##div[class*="details"][class*="u-author h-card user_is_author"]
 !lobste.rs##div[class*="details"][class*="u-author h-card user_is_author"]:has-text(simonw)
 
-! https://lobste.rs/s/jqibwu/ublock_filter_hide_vibecoding_tag
-lobste.rs##.tag_vibecoding.tag
+! slop - hide posts containing these tags while still indicating that something is missing.
+lobste.rs##div.details > span.tags:has-text(/vibecoding|ai/):upward(1)
 
 ! slop - hide title and link while still indicating that something is missing.
-lobste.rs##div.details > span.h-cite:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw|Coding Agents|Vibecoding/)
+lobste.rs##div.details > span.h-cite:has-text(/LLM|AI|MCP|Claude|ChatGPT|Opus|Sonnet|Codex|Agentic|Open[cC]law|NanoGPT|Qwen|Perplexity|NanoClaw|Coding Agents|Vibecoding/):upward(1)
 
 ! hide posts containing links to slop while still indicating that something is missing.
 lobste.rs##div.details:has-text(/anthropic.com|chatgpt.com|openai.com,gemini.google.com|.*\ai$/i)
