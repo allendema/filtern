@@ -4,7 +4,7 @@
 
 ! Description: Preferences - Hardcore block.
 ! Expires: 5 days
-! Version: 16.04.2026
+! Version: 19.04.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_hardcore.txt
@@ -109,6 +109,9 @@ invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko
 ! excepctions for the wildcard in "preferences_hardcore"
 ! allow - scriptlet - abort-on-property-write - specific - programming
 developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(abort-on-property-write, document.cookie)
+! allow - scriptlet - abort-on-property-write - wildcard regex - programming - git and gitlab instances
+! https://regex101.com/r/7q95nJ/2
+/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(abort-on-property-write, document.cookie)
 ! allow - scriptlet - abort-on-property-write - specific - misc
 challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(abort-on-property-write, document.cookie)
 ! scriptlet - prevent-canvas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -143,7 +146,8 @@ developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,k
 ! allow - scriptlet - remove-cookie - specific - misc
 challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - wildcard - regex - git subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
-/^git(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
+! https://regex101.com/r/7q95nJ/2
+/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - wildcard - regex - invidious.io instances and invdious subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
 invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - specific - git forges
@@ -165,6 +169,9 @@ debian.org,launchpad.net,gnome.org,kde.org,codeberg.org#@#+js(remove-cookie)
 developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(set-constant, document.hasStorageAccess, false)
 ! allow - scriptlet - document.hasStorageAccess - specific - misc
 challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(set-constant, document.hasStorageAccess, false)
+! allow - scriptlet - document.hasStorageAccess - wildcard - regex - git subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
+! https://regex101.com/r/7q95nJ/2
+/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(set-constant, document.hasStorageAccess, false)
 ! allow - scriptlet - document.hasStorageAccess - wildcard - regex - invidious.io instances and invdious subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
 invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$#@#+js(set-constant, document.hasStorageAccess, false)
 ! set-constant - document.hasStorageAccess !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
