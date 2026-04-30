@@ -105,15 +105,15 @@ invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko
 ! scriptlet - abort-on-property-write - document.cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#abort-on-property-writejs-
 !
-*##+js(abort-on-property-write, document.cookie)
+!*##+js(abort-on-property-write, document.cookie)
 ! excepctions for the wildcard in "preferences_hardcore"
 ! allow - scriptlet - abort-on-property-write - specific - programming
-developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(abort-on-property-write, document.cookie)
+!developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(abort-on-property-write, document.cookie)
 ! allow - scriptlet - abort-on-property-write - wildcard regex - programming - git and gitlab instances
 ! https://regex101.com/r/7q95nJ/2
-/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(abort-on-property-write, document.cookie)
+!/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(abort-on-property-write, document.cookie)
 ! allow - scriptlet - abort-on-property-write - specific - misc
-challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(abort-on-property-write, document.cookie)
+!challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(abort-on-property-write, document.cookie)
 ! scriptlet - prevent-canvas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !
 !
@@ -139,19 +139,19 @@ challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@
 ! scriptlet - remove-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library#remove-cookiejs-
 ! Removes current page cookies specified by name.
-*##+js(remove-cookie)
+!*##+js(remove-cookie)
 ! exepctions for the wildcard in "preferences_hardcore"
 ! allow - scriptlet - remove-cookie - specific - programming
-developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(remove-cookie)
+!developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - specific - misc
-challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(remove-cookie)
+!challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - wildcard - regex - git subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
 ! https://regex101.com/r/7q95nJ/2
-/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(remove-cookie)
+!/^git(?:\.[^.]{2,24}){1,2}$/,/^gitlab(?:\.[^.]{2,24}){1,2}$/#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - wildcard - regex - invidious.io instances and invdious subdomain on any domain - https://github.com/uBlockOrigin/uBlock-issues/wiki/Static-filter-syntax#hostname-regex - use sparingly
-invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
+!invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,/^invidious(?:\.[^.]+){1,2}$/#@#+js(remove-cookie)
 ! allow - scriptlet - remove-cookie - specific - git forges
-debian.org,launchpad.net,gnome.org,kde.org,codeberg.org#@#+js(remove-cookie)
+!debian.org,launchpad.net,gnome.org,kde.org,codeberg.org#@#+js(remove-cookie)
 ! scriptlet - remove-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !
 !
@@ -186,14 +186,14 @@ invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko
 ! remove a header from response, only a handful of them are supported
 ! cosmetic filter does not work if exception for this filter or filter with negated domain exist in other list - this is not cosmetic filter?
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/388
-*##^responseheader(set-cookie)
+!*##^responseheader(set-cookie)
 ! exepctions for the wildcard in "preferences_hardcore"
 ! allow - scriptlet - set-cookie - specific - programming
-developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#^responseheader(set-cookie)
+!developer.mozilla.org,mdnplay.dev,github.com,codeberg.org,debian.org,gnome.org,kde.org,archlinux.org,launchpad.net,codepen.io#@#^responseheader(set-cookie)
 ! allow - scriptlet - set-cookie - specific - misc
-challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#^responseheader(set-cookie)
+!challenges.cloudflare.com,wikipedia.org,bahn.de,twitch.tv,forums.linuxmint.com#@#^responseheader(set-cookie)
 ! invidious
-invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,invidious.tiekoetter.com,/^invidious(?:\.[^.]+){1,2}$/#@#^responseheader(set-cookie)
+!invidious.nerdvpn.de,yt.chocolatemoo53.com,yewtu.be,inv.thepixora.com,inv.nadeko.net,invidious.tiekoetter.com,/^invidious(?:\.[^.]+){1,2}$/#@#^responseheader(set-cookie)
 ! header - set-cookie !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! Hardcore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
