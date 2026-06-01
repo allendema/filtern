@@ -4,7 +4,7 @@
 
 ! Description: Theme and remove some cookies.
 ! Expires: 5 days
-! Version: 23.03.2026
+! Version: 01.06.2026
 ! Homepage: https://codeberg.org/allendema/filtern
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/preferences_wiki.txt
@@ -17,13 +17,17 @@ en.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme
 de.m.wikipedia.org##+js(trusted-set-cookie, dewikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
 en.m.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
 
+! set theme to night mode
+! different subdomains use different cookie names.
+de.wiktionary.org##+js(trusted-set-cookie, dewiktionarymwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+en.wiktionary.org##+js(trusted-set-cookie, enwiktionarymwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
+
 ! 2021-07-31 https://www.wikihow.com
 www.wikihow.com###article_courses_banner
-en.wikipedia.org##+js(trusted-set-cookie, enwikimwclientpreferences, "skin-theme-clientpref-night", 1day, , reload 1)
 
 ! remove some long ttl cookies
-wikipedia.*##+js(cookie-remover, "WMF-Last-Access")
-wikipedia.*##+js(cookie-remover, "WMF-Last-Access-Global")
-wikipedia.*##+js(cookie-remover, WMF-Last-Access)
-wikipedia.*##+js(cookie-remover, WMF-Last-Access-Global)
+wikipedia.*,wiktionary.org##+js(cookie-remover, "WMF-Last-Access")
+wikipedia.*,wiktionary.org##+js(cookie-remover, "WMF-Last-Access-Global")
+wikipedia.*,wiktionary.org##+js(cookie-remover, WMF-Last-Access)
+wikipedia.*,wiktionary.org##+js(cookie-remover, WMF-Last-Access-Global)
 ! Wiki !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
