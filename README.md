@@ -35,6 +35,8 @@ https://codeberg.org/allendema/filtern/raw/branch/main/forums.txt
 https://codeberg.org/allendema/filtern/raw/branch/main/social.txt
 # use shopping list
 https://codeberg.org/allendema/filtern/raw/branch/main/shopping.txt
+# use search_engines list
+https://codeberg.org/allendema/filtern/raw/branch/main/search_engines.txt
 # use streaming list
 https://codeberg.org/allendema/filtern/raw/branch/main/streaming.txt
 # use allowed list

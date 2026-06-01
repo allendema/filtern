@@ -1,11 +1,16 @@
-! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Version: 22.03.2026
-! Expires: 5 days
-
-# search_engines - block trackers, remove cookies, block elements.
 # https://codeberg.org/allendema/filtern/raw/branch/main/search_engines.txt
 # https://github.com/allendema/filtern/raw/main/search_engines.txt
 
+! Title: filtern filters - search_engines
+! SPDX-License-Identifier: GPL-3.0-or-later  
+! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
+
+! Description: Block trackers, remove cookies, block elements.
+! Expires: 5 days
+! Version: 01.06.2026
+! Homepage: https://codeberg.org/allendema/filtern
+! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Link: https://codeberg.org/allendema/filtern/raw/branch/main/search_engines.txt
 
 ! SEARCH ENGINES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -77,17 +82,4 @@ www.etools.ch##div.sRecord:nth-of-type(2)
 search.brave.com##div#usage-metrics
 ! 2022-05-22 https://search.brave.com
 search.brave.com##.svelte-5ygtku.panel
-
-! 2025-03-10 https://good-search.org
-# trash - analytics + client side bing + brave requests
-good-search.org,gexsi.com##+js(set-session-storage-item, searches, 1})
-search.brave.com##+js(trusted-set-cookie, summarizer, 0)
-search.brave.com##+js(set-local-storage-item, summarizer, 0)
-
-search.brave.com##+js(set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
-search.brave.com##+js(set-session-storage-item, app.usageMetricsOptOut, "true")
-search.brave.com##+js(set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
-search.brave.com##+js(cookie-remover)
-search.brave.com#%#//scriptlet('remove-cookie')
-
 ! SEARCH ENGINES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

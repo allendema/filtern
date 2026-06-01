@@ -68,4 +68,18 @@ github.com##.flex-1.ws-normal.Truncate-text:has-text(matrix)
 ! 19.02.2025 https://github.com
 github.com##.border-bottom.mb-5.feed-right-sidebar > .rounded-2.p-3.color-border-default.border.color-bg-default.mb-5
 ! Git !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Search Engines !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 2025-03-10 https://good-search.org
+# trash - analytics + client side bing + brave requests
+good-search.org,gexsi.com##+js(trusted-set-session-storage-item, searches, 1})
+
+search.brave.com##+js(trusted-set-cookie, summarizer, 0)
+search.brave.com##+js(set-local-storage-item, summarizer, 0)
+
+search.brave.com##+js(trusted-set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
+search.brave.com##+js(trusted-set-session-storage-item, app.usageMetricsOptOut, "true")
+search.brave.com##+js(trusted-set-session-storage-item, usageMetrics.dtoi, "1970-01-01")
+search.brave.com##+js(cookie-remover)
+! Search Engines !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Preference Filtering !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
