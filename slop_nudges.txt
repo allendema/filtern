@@ -18,6 +18,9 @@ github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keysh
 !github.com##:xpath(//div[contains(@class,"developmentSectionContainer")])
 ! commit id -> file -> context menu -> ask
 github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keyshortcuts="a"])
+! 2026.07.09
+! issue -> bottom right -> open in copi lot
+github.com##:xpath(//li[contains(@class,"prc-ActionList")])
 
 sourceforge.net##vibe-coding-bar
 
@@ -28,6 +31,8 @@ www.crunchbase.com##scout-lazy-wrapper
 ! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 2026.01.28 https://de.restaurantguru.com
 restaurantguru.com##.pierre-assist-wrapper
+! 2026.07.03 https://de.restaurantguru.com
+restaurantguru.com##.pierre-set.section.clear.content
 ! Summary of reviews
 www.trustpilot.com##.styles_summaryContainer__XpiRw > div:nth-of-type(1)
 ! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
