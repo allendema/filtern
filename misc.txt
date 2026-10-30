@@ -4,24 +4,24 @@
 
 ! Description: Filters which apply to misc sites. Ads, Banners...
 ! Expires: 5 days
-! Version: 23.03.2026
+! Version: 30.10.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
 
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 12/31/2019 maps.me
+! 2019-12-31 maps.me
 ||a.mapillary.com^
 
 ||aj2073.online^
 
-! 1/26/2020 agar.io
+! 2020-01-26 agar.io
 ||*.zendesk.com^
 
-! 4/12/2020 sitelock.com
+! 2020-04-12 sitelock.com
 ||www.sitelock.com^$important
 
-! 4/13/2020 ebay.de
+! 2020-04-13 ebay.de
 !||www.ebay.de^$important
 ||vector.im^
 
@@ -47,10 +47,10 @@ www.cnx-software.com##.goooooo-6.goooooo
 www.cnx-software.com###text-20 > .textwidget
 www.cnx-software.com###text-10 > .textwidget
 www.cnx-software.com##.header-top
-! 21.09.2024 https://www.cnx-software.com
+! 2024-09-21 https://www.cnx-software.com
 www.cnx-software.com##.gbigday-2.gbigday
 
-! 05.01.2026 https://www.cnx-software.com
+! 2026-01-05 https://www.cnx-software.com
 www.cnx-software.com##[href*="https://url4.cnx-software.com/"]
 www.cnx-software.com##.gbalday-single > [href] > .lazyloaded.ls-is-cached
 www.cnx-software.com##.gbalday-1.gbalday
@@ -58,5 +58,13 @@ www.cnx-software.com## .lazyloaded
 
 ! phish
 ||ostatus.org^
+
+! 2026-07-14
+! kibana
+||telemetry.elastic.co^$xhr,important
+
+||region*.google-analytics.com^
+
+||static.scc.suse.com/api/event^
 
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
