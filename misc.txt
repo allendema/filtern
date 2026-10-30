@@ -67,4 +67,17 @@ www.cnx-software.com## .lazyloaded
 
 ||static.scc.suse.com/api/event^
 
+! native ad !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 2026-07-28 https://dribbble.com
+dribbble.com##.js-highlighted.shot-thumbnail-container.js-thumbnail.shot-thumbnail
+
+! 2026-08-17 https://www.behance.net
+www.behance.net##.ProjectCoverAdLoader-root-LDg
+www.behance.net##.Projects-promotionalRowWrapper-E5E
+
+! 2026-08-17 https://www.rewe.de
+www.rewe.de###showroom-ad-bannerx
+! native ad !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
