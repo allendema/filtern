@@ -1,4 +1,4 @@
-! Version: 22.03.2026
+! Version: 02.11.2026
 ! Expires: 5 days
 ! Title: filtern filters - programming
 ! SPDX-License-Identifier: GPL-3.0-or-later  
@@ -14,6 +14,7 @@
 ! 8.8.2020 https://pastebin.com
 pastebin.com##.popup-container
 
+! Forges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 2022-04-05 https://github.com
 github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(4)
 github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(7)
@@ -21,12 +22,30 @@ github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-
 ! 2023-03-12 https://github.com
 github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(5)
 github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-of-type(13)
+! 2026-06-06 ca. https://github.com 
+||github.githubassets.com/assets/node_modules/@github/hydro-analytics-client/
+||github.githubassets.com/assets/packages/copilot-chat/*
+||github.githubassets.com/assets/packages/stats/*
+||github.githubassets.com/assets/packages/stats-metadata/*
+||github.githubassets.com/assets/packages/use-analytics/*
+||github.githubassets.com/assets/packages/web-vitals/hydro-stats.ts
+||github.githubassets.com/assets/app/components/search/providers/copilot.ts
+||github.githubassets.com/assets/app/components/search/providers/analytics-provider/*
+||github.githubassets.com/assets/app/components/search/providers/analytics-overrides/*
+||github.githubassets.com/assets/packages*dev-logger.*
+
+||githubassets.com/dist/analytics_client.*
+||githubassets.com/hydro-analytics.*
+||githubassets.com/*dev-logger.*
+
+! 2025-11-15 https://sourceforge.net
+sourceforge.net###floating-content-wrapper
+! Forges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! 2024-04-02 https://sound.stackexchange.com
 stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com,serverfault.com###noscript-warning
 ! 06.08.2024 https://stackoverflow.com
 stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com,serverfault.com##.mb8.mt32.ps-relative.js-overflowai-cta
-
 
 ! 2024-04-18 https://stackoverflow.com
 stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com,serverfault.com##.py2.fs-body2.ff-sans.fc-white.bg-blue-400.js-announcement-banner
@@ -68,7 +87,4 @@ www.geeksforgeeks.org###text-18 > .textwidget > div
 
 ! 2025-19-10 https://www.whois.com
 www.whois.com##aside
-! 2025-11-15 https://sourceforge.net
-sourceforge.net###floating-content-wrapper
-
 ! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
