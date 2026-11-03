@@ -1,11 +1,10 @@
-! Version: 02.11.2026
-! Expires: 5 days
 ! Title: filtern filters - programming
 ! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
 ! Description: Remove warnings, irrelevant banners, links and remove some cookies.
-! Version: 30.10.2026
+! Expires: 5 days
+! Version: 03.11.2026
 ! Homepage: https://codeberg.org/allendema/filtern
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/programming.txt
@@ -28,14 +27,17 @@ github.com##article.my-4.color-bg-default.color-shadow-small.rounded.border:nth-
 ||github.githubassets.com/assets/packages/stats/*
 ||github.githubassets.com/assets/packages/stats-metadata/*
 ||github.githubassets.com/assets/packages/use-analytics/*
+||github.githubassets.com/assets/packages/hydro-tracking/*
+||github.githubassets.com/assets/packages/in-product-targeting/*
+||github.githubassets.com/assets/packages/ipm-telemetry/*
+||github.githubassets.com/assets/packages/*analytics*
 ||github.githubassets.com/assets/packages/web-vitals/hydro-stats.ts
 ||github.githubassets.com/assets/app/components/search/providers/copilot.ts
 ||github.githubassets.com/assets/app/components/search/providers/analytics-provider/*
 ||github.githubassets.com/assets/app/components/search/providers/analytics-overrides/*
 ||github.githubassets.com/assets/packages*dev-logger.*
 
-||githubassets.com/dist/analytics_client.*
-||githubassets.com/hydro-analytics.*
+||githubassets.com/*nalytic*
 ||githubassets.com/*dev-logger.*
 
 ! 2025-11-15 https://sourceforge.net

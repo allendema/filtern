@@ -1,11 +1,11 @@
+! Expires: 5 days
 ! Title: filtern filters - slop nudges
 ! SPDX-License-Identifier: GPL-3.0-or-later  
 ! SPDX-FileCopyrightText: © 2019-2026 Allen Dema
 
 ! Description: Remove things pushing slop.
-! Expires: 5 days
-! Version: 30.10.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
+! Version: 03.11.2026
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
 
@@ -21,6 +21,12 @@ github.com##:xpath(//div[contains(@class,"ActionMenuContainer")]//li[@aria-keysh
 ! 2026.10.30
 ! issue -> bottom right -> open in copi lot
 github.com##:xpath(//button[contains(@class,"prc-ActionList-ActionListContent-KBb8-")])
+
+! 2026-11-02
+! from browser debugger
+||githubassets.com/assets/packages/code-view/components/ask-copilot/*
+||githubassets.com/assets/packages/*opilo*
+
 sourceforge.net##vibe-coding-bar
 
 ! 18.03.2026 https://www.crunchbase.com
