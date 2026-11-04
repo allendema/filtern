@@ -5,7 +5,7 @@
 
 ! Description: Remove things pushing slop.
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
-! Version: 03.11.2026
+! Version: 04.11.2026
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/slop_nudges.txt
 
@@ -29,17 +29,19 @@ github.com##:xpath(//button[contains(@class,"prc-ActionList-ActionListContent-KB
 
 sourceforge.net##vibe-coding-bar
 
-! 18.03.2026 https://www.crunchbase.com
+! 2026-03-18 https://www.crunchbase.com
 www.crunchbase.com##scout-lazy-wrapper
 ! Slop Nudges !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 2026.01.28 https://de.restaurantguru.com
+! 2026-01-28 https://de.restaurantguru.com
 restaurantguru.com##.pierre-assist-wrapper
-! 2026.07.03 https://de.restaurantguru.com
+! 2026-07-03 https://de.restaurantguru.com
 restaurantguru.com##.pierre-set.section.clear.content
 ! Summary of reviews
 www.trustpilot.com##.styles_summaryContainer__XpiRw > div:nth-of-type(1)
+! 2026-06-01 https://search.restaurantguru.com
+search.restaurantguru.com##.list_section__wrap-ai.list_section__wrap
 ! Slop Banners and Summaries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! hide title and link while still indicating that something is missing.
@@ -63,3 +65,15 @@ lobste.rs##div.details > span.tags:has-text(/vibecoding|ai/):upward(1)
 
 ! slop thumbnails
 ||tarnkappe.info^
+
+! 2026-07-16
+! top right slop push
+stackexchange.com,askubuntu.com,stackoverflow.com,superuser.com,serverfault.com####.p16.d-block.s-sidebarwidget--content
+
+! 2026-05-29 https://www.digital-eliteboard.com
+www.digital-eliteboard.com##.debAd-leaderboardWrap
+www.digital-eliteboard.com##.debAd-standalone
+www.digital-eliteboard.com##.message--debAd.message--post.message
+www.digital-eliteboard.com##.debSeoTldr
+www.digital-eliteboard.com##.debAd-inPostWrap
+www.digital-eliteboard.com##.debSeoCluster--spoke.debSeoCluster
