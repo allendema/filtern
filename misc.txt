@@ -4,7 +4,7 @@
 
 ! Description: Filters which apply to misc sites. Ads, Banners...
 ! Expires: 5 days
-! Version: 30.10.2026
+! Version: 05.11.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/misc.txt
@@ -78,6 +78,24 @@ www.behance.net##.Projects-promotionalRowWrapper-E5E
 
 ! 2026-08-17 https://www.rewe.de
 www.rewe.de###showroom-ad-bannerx
+
+! 2026-11-05 https://letterboxd.com
+! browser -> debugger
+! window.person.showAds + window.adsLocation + window.adsmode + + isAdsVisible + cf.showAsyncAd(opts)
+! else adUnit.id 
+! if (!(window.ramp && window.ramp.que)) {}
+! bulkaddtolist ?
+
+! browser -> debugger -> s.ltrbxd.com/static/js/es/
+letterboxd.com##+js(set-constant, disableAds, true)
+letterboxd.com##+js(set-constant, window.person.showAds, false)
+letterboxd.com##+js(set-constant, bxd.showAdSlots, noopfunc)
+
+! browser -> debugger -> s.ltrbxd.com/static/js/es/partner-publishers-*.js - gtag
+||s.ltrbxd.com/static/js/es/js/workers/google-*
+||ltrbxd.com/static/google-*
 ! native ad !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! 2026-11-05 letterboxd.com
+||cdn.intergient.com
 ! Misc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
