@@ -4,7 +4,7 @@
 
 ! Description: Remove banners, odds, etc. from sport sites.
 ! Expires: 5 days
-! Version: 23.03.2026
+! Version: 11.11.2026
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Homepage: https://codeberg.org/allendema/filtern
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/sports.txt
@@ -77,5 +77,13 @@ flashscore.*##+js(addEventListenerDefuser, onRenderAdblock)
 flashscore.*##+js(addEventListenerDefuser, emitAdblockDetected)
 flashscore.*##+js(addEventListenerDefuser, emitRenderAdblockFallback)
 flashscore.*##+js(addEventListenerDefuser, emitRenderAdblockFallback)
+
+! 2026-11-10 https://www.flashscore.com
+! https://www.flashscore.com/football/europe/champions-league/
+www.flashscore.com##.outrightTopOdds
+! 2026-11-10 https://www.flashscore.com
+www.flashscore.com##.teamPageOutrightTopOdds
+!www.flashscore.com##.gambling--aboveLivetable
+www.flashscore.com##.gambling
 
 ! Sports !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
