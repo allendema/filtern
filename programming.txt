@@ -4,7 +4,7 @@
 
 ! Description: Remove warnings, irrelevant banners, links and remove some cookies.
 ! Expires: 5 days
-! Version: 03.11.2026
+! Version: 16.11.2026
 ! Homepage: https://codeberg.org/allendema/filtern
 ! License:  https://codeberg.org/allendema/filtern/LICENSE
 ! Link: https://codeberg.org/allendema/filtern/raw/branch/main/programming.txt
@@ -89,4 +89,13 @@ www.geeksforgeeks.org###text-18 > .textwidget > div
 
 ! 2025-19-10 https://www.whois.com
 www.whois.com##aside
+
+! 2026-06-06
+! gitlab instances
+||/assets/webpack/tracker.*.js^
+!/assets/webpack/tracker.*.js$from=gitlab.gnome.org
+
+! 2026-10-04
+! influx
+gitlab.freedesktop.org##.light-red.js-broadcast-notification-10.banner.gl-broadcast-message
 ! Programming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
